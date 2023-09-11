@@ -13,14 +13,16 @@
 
 // 1, elementi
 const boxesEl = document.querySelector('.boxes');
-const boxEl = document.querySelector('.box')
 
 
 // 2.
 for (let i = 1; i <= 100; i++) {
 
-  const box = document.createElement('div');
-  box.classList.add('box');
+  const boxEl = document.createElement('div');
+  boxEl.classList.add('box');
+
+  boxesEl.append(boxEl);
+
   console.log(box);
 
 
