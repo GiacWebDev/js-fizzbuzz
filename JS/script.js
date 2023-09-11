@@ -9,14 +9,14 @@
 
 // elementi
 const listaE = document.querySelector('.lista');
+const liE = document.createElement('li')
 
 // 1.
 for (let i = 1; i <= 100; i++) {
-  
   console.log(i);
 
   // 2
-  if(i % 3 === 0) {
+  if(i % 3 == 0) {
     i = 'Fizz';
     console.log('fizz');
   }
