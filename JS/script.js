@@ -5,14 +5,18 @@
 // 1. segnarsi gli elementi e metterli in js
 // 2. creare un ciclo numerico lista da 1 a 100.
 // 3. identificare i multipli di 3 e appendere in html con "Fizz"
-// 4. identificare i multipli di 5 e appendere in html con "Buzz"
-// 5. creo le 100 box che conterranno i numeri/scritte
+//    identificare i multipli di 5 e appendere in html con "Buzz"
+// 4. creo le 100 box che conterranno i numeri/scritte
 
 
 
 
 // 1, elementi
 const boxesEl = document.querySelector('.boxes');
+const bgRedEl = document.querySelector('.bg-red')
+const bgYellowEl = document.querySelector('.bg-yellow')
+const bgGreenEl = document.querySelector('.bg-green')
+
 
 
 // 2.
@@ -22,24 +26,27 @@ for (let i = 1; i <= 100; i++) {
   boxEl.classList.add('box');
 
   boxesEl.append(boxEl);
-  boxEl.append(i);
 
   console.log(boxEl);
 
 
-
-  // 3
+  // 3-4
   if (i % 3 === 0 && i % 5 === 0) {
     console.log('FizzBuzz');
+    boxEl.classList.add('bgRed')
+    boxEl.append('FizzBuzz');
 
   } else if (i % 3 === 0) {
-    console.log('Fizz')
+    console.log('Fizz');
+    boxEl.classList.add('bgGreenEl')
+    boxEl.append('Fizz');
 
   } else if (i % 5 === 0 ) {
-    console.log('Buzz')
+    console.log('Buzz');
+    boxEl.append('Buzz');
 
   } else {
-    console.log(i)
+    console.log(i);
   }
 
 };

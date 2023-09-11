@@ -1,9 +1,26 @@
+.container_ {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
-  margin: 10px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
   background-color: bisque;
+}
+
+.bg-red {
+  background-color: brown;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-green {
+  background-color: green;
 }
