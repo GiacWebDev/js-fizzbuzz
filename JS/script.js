@@ -17,15 +17,15 @@ const boxesEl = document.querySelector('.boxes');
 const bgRed = document.querySelector('.bg-red');
 const bgYellow = document.querySelector('.bg-yellow');
 const bgGreen = document.querySelector('.bg-green');
-
 const bodyEl = document.querySelector('body');
-titoloEL.append('FizzBuzz');
 
-// do il titolo alla pagina in h1 senza usare html
+// titoloEL.append('FizzBuzz');
 
-// bodyEl.innerHTML = titoloEL.innerHTML + bodyEl.innerHTML;
-bodyEl.prepend = titoloEL;
-console.log(titoloEL);
+// // do il titolo alla pagina in h1 senza usare html
+
+// // bodyEl.innerHTML = titoloEL.innerHTML + bodyEl.innerHTML;
+// bodyEl.prepend = titoloEL;
+// console.log(titoloEL);
 
 
 
