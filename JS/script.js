@@ -12,10 +12,20 @@
 
 
 // 1, elementi
+const titoloEL = document.createElement('h1')
 const boxesEl = document.querySelector('.boxes');
-const bgRedEl = document.querySelector('.bg-red')
-const bgYellowEl = document.querySelector('.bg-yellow')
-const bgGreenEl = document.querySelector('.bg-green')
+const bgRed = document.querySelector('.bg-red');
+const bgYellow = document.querySelector('.bg-yellow');
+const bgGreen = document.querySelector('.bg-green');
+
+const bodyEl = document.querySelector('body');
+titoloEL.append('FizzBuzz');
+
+// do il titolo alla pagina in h1 senza usare html
+
+// bodyEl.innerHTML = titoloEL.innerHTML + bodyEl.innerHTML;
+bodyEl.prepend = titoloEL;
+console.log(titoloEL);
 
 
 
@@ -33,19 +43,21 @@ for (let i = 1; i <= 100; i++) {
   // 3-4
   if (i % 3 === 0 && i % 5 === 0) {
     console.log('FizzBuzz');
-    boxEl.classList.add('bgRed')
+    boxEl.classList.add('bgRed');
     boxEl.append('FizzBuzz');
 
   } else if (i % 3 === 0) {
     console.log('Fizz');
-    boxEl.classList.add('bgGreenEl')
+    boxEl.classList.add('bgGreen');
     boxEl.append('Fizz');
 
   } else if (i % 5 === 0 ) {
     console.log('Buzz');
+    boxEl.classList.add('bgYellow');
     boxEl.append('Buzz');
 
   } else {
+    boxEl.append(i);
     console.log(i);
   }
 
