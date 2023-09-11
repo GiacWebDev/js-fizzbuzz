@@ -6,14 +6,24 @@
 // 2. creare un ciclo numerico lista da 1 a 100.
 // 3. identificare i multipli di 3 e appendere in html con "Fizz"
 // 4. identificare i multipli di 5 e appendere in html con "Buzz"
+// 5. creo le 100 box che conterranno i numeri/scritte
+
+
+
 
 // 1, elementi
-const listaE = document.querySelector('.lista');
-const liE = document.createElement('li')
+const boxesEl = document.querySelector('.boxes');
+const boxEl = document.querySelector('.box')
+
 
 // 2.
 for (let i = 1; i <= 100; i++) {
-  console.log(i);
+
+  const box = document.createElement('div');
+  box.classList.add('box');
+  console.log(box);
+
+
 
   // 3
   if (i % 3 === 0 && i % 5 === 0) {
