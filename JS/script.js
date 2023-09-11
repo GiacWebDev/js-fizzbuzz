@@ -22,8 +22,9 @@ for (let i = 1; i <= 100; i++) {
   boxEl.classList.add('box');
 
   boxesEl.append(boxEl);
+  boxEl.append(i);
 
-  console.log(box);
+  console.log(boxEl);
 
 
 
