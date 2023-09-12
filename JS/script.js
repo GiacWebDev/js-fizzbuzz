@@ -9,25 +9,8 @@
 // 4. creo le 100 box che conterranno i numeri/scritte
 
 
-
-
 // 1, elementi
-const titoloEL = document.createElement('h1')
 const boxesEl = document.querySelector('.boxes');
-const bgRed = document.querySelector('.bg-red');
-const bgYellow = document.querySelector('.bg-yellow');
-const bgGreen = document.querySelector('.bg-green');
-const bodyEl = document.querySelector('body');
-
-// titoloEL.append('FizzBuzz');
-
-// // do il titolo alla pagina in h1 senza usare html
-
-// // bodyEl.innerHTML = titoloEL.innerHTML + bodyEl.innerHTML;
-// bodyEl.prepend = titoloEL;
-// console.log(titoloEL);
-
-
 
 // 2.
 for (let i = 1; i <= 100; i++) {
@@ -35,13 +18,10 @@ for (let i = 1; i <= 100; i++) {
   const boxEl = document.createElement('div');
   boxEl.classList.add('box');
 
-  boxesEl.append(boxEl);
-
   console.log(boxEl);
 
-
   // 3-4
-  if (i % 3 === 0 && i % 5 === 0) {
+  if (i % 15 === 0) {
     console.log('FizzBuzz');
     boxEl.classList.add('bgRed');
     boxEl.append('FizzBuzz');
@@ -62,3 +42,5 @@ for (let i = 1; i <= 100; i++) {
   }
 
 };
+
+boxesEl.append(boxEl);
